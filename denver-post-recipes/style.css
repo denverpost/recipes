@@ -1,0 +1,175 @@
+/*
+Theme Name: Denver Post Recipes
+Theme URI: http://blogs.denverpost.com/recipes/
+Description: Denver Post custom single-site theme, based on "Unique Responsive Theme for WordPress." 
+Version: 0.5
+Author: Daniel J. Schneider
+Author URI: http://www.denverpost.com
+Tags: 1 column theme, clean, portfolio, blogger
+*/
+
+/* Global */@media all {
+* { margin: 0; padding: 0; }
+body { font-size: 15px; line-height:22px; color:#333; font-family: "Proxima Nova Bold","Helvetica Neue",Arial,Helvetica,sans-serif; background: #fff; }
+h1,h2,h3,h4,h5,p { margin: 10px 0; }
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+a { color: #333; text-decoration: none; }
+a:hover { color: #eb6530; }
+.no_margin_bottom { margin-bottom: 0; }
+#main_container { width: 1000px; margin: 0 auto; background: #fff; border-right: 1px solid #ccc; border-left: 1px solid #ccc; } #main_content { width:750px; float: left; margin: 0 20px 0 0; background: #fff; border-right: 1px solid #ccc; }
+img { border: none; }
+
+/* Header */
+.header_top { padding: 20px 0; }
+.header_search_cont { float: right; margin:3px 7px 0 22px; position: relative; }
+.header_search_cont input[type=text] { width: 176px; height: 23px; border: 1px solid #E5E5E5; }
+.search_icon { position: absolute; top: 7px; right: 8px; }
+
+.social_list { list-style-type: none; float: right; margin-top: 2px; }
+.social_list li { float: left; margin-left: 12px; }
+
+#menu_container { border-top: 1px solid #ddd; border-bottom: 5px solid #DDD; }
+#menu_container ul { list-style-type: none; float: left; margin-left: 15px; padding: 3px 0; }
+#menu_container ul li { float: left; font-size: 15px; margin: 0 5px; }
+#menu_container ul li a { display: block; text-decoration: none; color: #000; padding: 5px 10px; }
+#menu_container ul li a:hover { background-color: #000; color: #fff; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; }
+#menu_container ul li.current-menu-item a, #menu_container ul li.current_page_item a  { background-color: #000; color: #fff; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; }
+#menu_container ul.cat_list { border-left: 1px solid #DDD; margin-left: 5px; padding-left: 5px; } img.logo { width:750px; }
+
+.logo_cont { padding: 15px 0; }
+
+/* Content */
+#slider_container { margin-bottom: 12px; position: relative; }
+
+#content { }
+.home_post_box { padding: 18px 0; width: 710px; margin: 0 auto; }
+.home_post_box img { float: left; width: 457px; height: 185px; }
+.home_post_box img:hover { opacity:0.8; filter:alpha(opacity=80); }
+.home_post_cont { float: right; width: 230px; height: 185px; position: relative; color: #666; }
+.home_post_cont h3 { font-size: 18px; margin-top: 0; font-weight: normal; }
+.home_post_cont h3 a { color: #333; text-decoration: none; } .home_post_cont p { font-size:12px; line-height:16px; }
+.home_post_cont h3 a:hover { color: #eb6530; }
+.home_post_meta { position: absolute; right: 5px; bottom: 5px; }
+.home_post_meta a { color: #666; text-decoration: none; }
+.home_post_meta a:hover { color: #eb6530; }
+
+.cat_post_box { padding: 18px 0; width: 557px; border-bottom: 1px solid #DDD; }
+.cat_post_box img { width: 557px; height: 265px; }
+.cat_post_box img:hover { opacity:0.8; filter:alpha(opacity=80); }
+.cat_post_box h3 { font-size: 18px; margin-bottom: 0; font-weight: normal; }
+.cat_post_box h3 a { color: #333; text-decoration: none; }
+.cat_post_box h3 a:hover { color: #eb6530;}
+#single_left { float: left; width: 710px; margin-left: 18px; }
+#single_left h1 { font-size: 20px; margin: 24px 0 0; font-weight: normal; width:490px; }
+#single_left h2 { font-size: 18px; margin: 20px 0 0; font-weight: 600; color:#333; }
+#single_left .single_content img { max-width: 710px; }
+.cat_post_box .no_margin_bottom { color: #666; } .alignright { float:right;margin: 5px 0 5px 5px; }  .wp-caption.alignright p { width:290px;font-style:italic;margin:5px 10px 15px; clear: both; color: #888;font-size:14px;font-weight:200; } .wp-caption.aligncenter p { width:100%;font-style:italic;margin:5px 10px 15px; clear: both; color: #888;font-size:14px;font-weight:200; }  
+
+.home_post_load_more { padding-left: 18px; margin-top: 10px; }
+#single_left .home_post_load_more { padding-left: 0; }
+.blog_meta a { color: #333; text-decoration: none; }
+.blog_meta a:hover { color: #eb6530; }
+#commentform input[type=submit] { background-color: #333; border: none; color: #fff; padding: 8px 10px; }
+ol.commentlist { margin-left: 15px; }
+
+/* Sidebar */
+#sidebar { float: left; width: 200px; padding-top: 18px; }
+.side_box { margin:0 auto 25px; color: #666; }
+.side_box h3 { padding: 3px 5px; background-color: #eee; margin-top: 0; color: #666; font-size: 15px; }
+.side_box ul, .side_box ol { list-style-type: circle; margin-left: 10px; }
+.side_box ul li, .side_box ol li, .footer_box ul li, .footer_box ol li { margin-bottom: 5px; margin-left:5px; padding-left:6px; text-indent: -10px; font-size:13px; line-height:16px;  }
+.side_box ul li a, .side_box ol li a { text-decoration: none; color: #666; }
+.side_box .textwidget { padding: 0 10px; }
+.footer_box ul, .footer_box ol { list-style-type: none; margin-left: 3px; }
+
+/* Footer */
+#footer { width: 1000px; margin: 0 auto; border-top: 1px solid #DDD; border-bottom: 1px solid #DDD; text-align: center; padding: 10px 0; color: #333; }
+.footer_box { width: 180px; float: left; margin-right: 24px; }
+.footer_box_last { margin-right: 0; }
+.footer_box h3 { font-size: 16px; font-weight: normal; margin-top: 0; }
+.footer_box ul li a, .footer_box ol li a { text-decoration: none; color: #333; }
+.footer_box a:hover { color: #eb6530; } #footer a { color: #333; text-decoration: none; } #footer a:hover {color: #eb6530; }   /* Interactive list item styles for inside article bodies */ .touch_list li { list-style-type: none; text-indent: 0; padding: 8px; font-size: 16px; cursor: pointer; border-bottom: 1px solid #ccc; font-weight: normal; }  .touch_list ul { list-style-type: none; text-indent: 0; padding: 0; border-top: 1px solid #ccc; background: #fff; margin:10px 0 0; } .touch_list .highlight { background:#ddd; }    /* Non-interactive list styles */  .single_content li { list-style-type: none; text-indent: 0; padding: 5px 8px; font-size: 16px; font-weight: normal; }  .single_content ul { list-style-type: none; text-indent: 0; padding: 0; margin:10px 0 0; }  .recipe_list li { text-transform: capitalize; }  /* Rewriting kk Star Ratings styles */  div.single_content #star_container .kk-star-ratings.rgt { float:left; display:inline-block; } div.single_content #star_container span.star_title { float:left; display:inline-block; font-size: 14px; color:#333; font-family: "Proxima Nova Bold","Helvetica Neue",Arial,Helvetica,sans-serif; margin:6px 0 5px 10px; font-weight:600; }  #star_container { width:200px; border:1px solid #ccc;float:right; overflow:visible; z-index:90; margin:-36px 10px 8px 6px; }  #home_post_box_cont .home_post_box .home_post_meta #star_container { border: none; margin: 0; font-size: 13px; width: 140px; color: #888; line-height:18px; } #home_post_box_cont .home_post_box .home_post_meta #star_container .kk-star-ratings { width: 140px; }  #home_post_box_cont .home_post_box .home_post_meta #star_container .kk-star-ratings .kksr-legend { margin: -3px 0 0; font-size: 13px; color: #888; line-height:18px; }  #home_post_box_cont .home_post_box .home_post_meta #star_container .star_title { display: none; } #home_post_box_cont .home_post_box .home_post_meta #star_container .kksr-fuel,  #home_post_box_cont .home_post_box .home_post_meta #star_container .kksr-star,  #home_post_box_cont .home_post_box .home_post_meta #star_container .yellow { display: none; }  /* Social buttons */  #socialshare { width:100%; height:42px; border-top:1px solid #ccc; border-bottom:1px solid #ccc; }  #socialshare .socialbutton { width:75px;height:22px;margin:10px;float:left;display:inline-block;overflow:hidden; }  #socialshare .socialtitle { width:80px; height:100%;float:left;display:block; }  #socialshare .socialtitle h2 { margin:0;font-size:15px; line-height:17px; }  /* Dropdown menu styles */ .side_box select { width: 200px; height: 25px; padding:2px; border: 1px solid #E5E5E5; background:transparent; }   }
+/* for tablet */
+@media only screen and (min-width: 768px) and (max-width: 959px) { .logo { max-width: 700px; }
+
+#main_container { width: 728px; } #content { width:728px; } #main_content { width:500px; float:left; margin: 0 10px 0 0; } 
+
+.home_post_box { width: 500px; }
+.home_post_box a { width: 480px; margin: 0 auto; }
+.home_post_box img { float:none; margin: 8px 0 8px 10px; width: 480px; height: 210px; }
+.home_post_cont { float: none; width: 480px; height: auto; margin: 0 auto; } .home_post_cont p { float:none; } .home_post_meta { right: 5px; bottom: -8px; }
+
+#single_left { width: 480px; margin:0 10px; }
+#single_left .single_content img { max-width: 480px; height: inherit; margin-left: 0; }
+div.wp-caption, .wp-caption img { width: 100%!important; }
+.cat_post_box { width: 480px; }
+.cat_post_box img { width: 480px; height: 245px; } #star_container { clear:both; margin:8px auto; float:none; display:block; width:320px; }  div.single_content #star_container .kk-star-ratings { width:250px!important; }  #star_container .kksr-stars { float: left; }  #star_container .kksr-legend { float:left; margin: 2px 0 0 5px; }  #home_post_box_cont .home_post_box .home_post_meta #star_container { float: right; border: none; margin: 0; font-size: 13px; width: 140px; color: #888; line-height:18px; }  
+
+#sidebar { width: 200px; float:left; }
+#footer { width: 728px; }
+
+/* Social buttons */  #socialshare { width:100%; height:64px; border-top:1px solid #ccc; border-bottom:1px solid #ccc; }  #socialshare .socialbutton { width:85px;height:22px;margin:5px 10px;float:left;display:inline-block;overflow:hidden; }  #socialshare .socialtitle { width:80px; height:100%;float:left;display:block; }  #socialshare .socialtitle h2 { margin:0;font-size:15px; line-height:17px; } 
+}
+/* bigger mobile or landscape mobile displays */
+@media screen and (min-width: 500px) and (max-width:760px) {
+
+#main_container { width: 500px; border:none; margin: 0 auto; }
+.logo { max-width: 500px; }
+.header_search_cont { display: none; }
+#menu_container ul { float: left; margin-left: 0px; width: 320px; }
+#menu_container ul li { float: left; font-size: 15px; margin: 0px 0 5px 0; }
+#menu_container ul.cat_list { margin-left: 0px; padding-left: 0px; float: right; border-left: none; }
+#main_content { width:500px; margin: 0; border:none; } #home_post_box_cont { margin:10px 0; }
+.home_post_box { width: 500px; padding: 0; margin-bottom: 15px; }
+.home_post_box img { float: none; width: 500px; height: 185px; }
+.home_post_cont { float: none; width: auto; height: auto; }
+.home_post_cont p { display: none; }
+.home_post_cont .home_post_meta { display: none; }
+.home_post_load_more { width: 500px; padding-left: 0; margin-left: auto; margin-right: auto; }
+div.wp-caption, .wp-caption img { width: 100%!important; }
+#single_left { width: 500px; float: none; margin: 0 auto; }
+#single_left h1 { width: 500px; float: none; margin: 8px auto; }
+#single_left .single_content img { max-width: 500px; height: inherit; }
+.cat_post_box { width: 500px; }
+.cat_post_box img { width: 500px; height: 165px; } #star_container { clear:both; margin:8px auto; float:none; display:block; width:320px; }  div.single_content #star_container .kk-star-ratings { width:250px!important; }  #star_container .kksr-stars { float: left; }  #star_container .kksr-legend { float:left; margin: 2px 0 0 5px; }
+
+#commentform textarea { width: 500px; }
+
+#sidebar { clear: both; width: 500px; } .side_box { width:320px; margin:0 auto 20px; }
+
+#footer { width: 500px; padding: 0 10px; margin: 0; } #footer p { font-size:12px; } 
+/* Social buttons */  #socialshare { width:100%; height:64px; border-top:1px solid #ccc; border-bottom:1px solid #ccc; }  #socialshare .socialbutton { width:85px;height:22px;margin:5px 10px;float:left;display:inline-block;overflow:hidden; }  #socialshare .socialtitle { width:80px; height:100%;float:left;display:block; }  #socialshare .socialtitle h2 { margin:0;font-size:15px; line-height:17px; }
+
+}
+/* for mobile */
+@media screen and (max-width: 480px) {
+
+#main_container { width: 320px; border:none; margin: 0 auto; }
+.logo { max-width: 320px; }
+.header_search_cont { display: none; }
+#menu_container ul { float: left; margin-left: 0px; width: 320px; }
+#menu_container ul li { float: left; font-size: 15px; margin: 0px 0 5px 0; }
+#menu_container ul.cat_list { margin-left: 0px; padding-left: 0px; float: right; border-left: none; }
+#main_content { width:320px; margin: 0; border:none; } #home_post_box_cont { margin:10px 0; }
+.home_post_box { width: 300px; padding: 0 0 15px; margin-bottom: 10px; border-bottom:1px solid #ccc; }
+.home_post_box img { float: none; width: 300px; height: 145px; }
+.home_post_cont { float: none; width: auto; height: auto; } .home_post_cont h3 { margin:5px 0 0; } 
+.home_post_cont p { display: none; }
+.home_post_cont .home_post_meta { display: none; }
+.home_post_load_more { width: 300px; padding-left: 0; margin-left: auto; margin-right: auto; }
+div.wp-caption, .wp-caption img { width: 100%!important; }
+#single_left { width: 300px; float: none; margin: 0 auto; }
+#single_left h1 { width: 300px; float: none; margin: 10px auto; }
+#single_left .single_content img { max-width: 300px; height: inherit; }
+.cat_post_box { width: 300px; }
+.cat_post_box img { width: 300px; height: 125px; } #star_container { clear:both; margin:8px auto; float:none; display:block; }
+
+#commentform textarea { width: 300px; }
+
+#sidebar { clear: both; width: 320px; } .side_box { width:200px; margin:0 auto 20px; }
+
+#footer { width: 300px; padding: 0 10px; margin: 0; } #footer p { font-size:12px; } 
+/* Social buttons */  #socialshare { width:100%; height:96px; border-top:1px solid #ccc; border-bottom:1px solid #ccc; }  #socialshare .socialbutton { width:75px;height:22px;margin:5px 10px;float:left;display:inline-block;overflow:hidden; }  #socialshare .socialtitle { width:80px; height:100%;float:left;display:block; }  #socialshare .socialtitle h2 { margin:0;font-size:15px; line-height:17px; } 
+}/* Print */@media print { .noPrint { display:none; } .wp-caption { display:none; }  img.logo { width:50%;margin-left:20px; }  #single_left h1 { font-size:36px;margin-bottom:20px; } body { background-color:#FFFFFF; background-image:none; color:#000000; } #menu_container, #sidebar, #footer, #socialshare, #disqus_thread, #star_container { display:none; } #main_content, #single_left { width:100%; border:none;}  #main_container { border:none; }  .touch_list li { list-style-type: none; text-indent: 0; padding: 3px; font-size: 17px; cursor: pointer; border-bottom:none; font-weight: normal; }  .touch_list ul { list-style-type: none; text-indent: 0; padding: 0; border-top:none; background: #fff; margin:10px 0 0; } .touch_list .highlight { background:#fff; }}

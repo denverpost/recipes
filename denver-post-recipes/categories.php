@@ -1,0 +1,1 @@
+<?php /*Template Name: Category List*/?><?php get_header(); ?><div id="single_left">	<h1><?php the_title(); ?></h1>	<div class="single_content recipe_list">		<ul>			<?php wp_list_categories('orderby=name&show_count=1&title_li='); ?>           		</ul>	</div><!--//single_content-->	</div><!--//single_left--><?php get_footer(); ?>
